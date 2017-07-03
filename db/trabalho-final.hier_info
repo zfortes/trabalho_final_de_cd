@@ -14,7 +14,7 @@ RESET => row:inst18.CLEAR
 RESET => row:inst19.CLEAR
 RESET => row:inst20.CLEAR
 RESET => row:inst21.CLEAR
-RESET => row_1:inst25.CLEAR
+RESET => row_1:inst7.CLEAR
 RESET => vidas:inst26.RESET
 CLOCK_MUDA_MAPA => row:inst.CLOCK
 CLOCK_MUDA_MAPA => row:inst16.CLOCK
@@ -23,7 +23,7 @@ CLOCK_MUDA_MAPA => row:inst18.CLOCK
 CLOCK_MUDA_MAPA => row:inst19.CLOCK
 CLOCK_MUDA_MAPA => row:inst20.CLOCK
 CLOCK_MUDA_MAPA => row:inst21.CLOCK
-CLOCK_MUDA_MAPA => row_1:inst25.CLOCK
+CLOCK_MUDA_MAPA => row_1:inst7.CLOCK
 E[0] => row:inst.E[0]
 E[1] => row:inst.E[1]
 E[2] => row:inst.E[2]
@@ -32,6 +32,13 @@ E[4] => row:inst.E[4]
 E[5] => row:inst.E[5]
 E[6] => row:inst.E[6]
 E[7] => row:inst.E[7]
+C[1] => cdp:inst8.C1
+C[2] => cdp:inst8.C2
+C[3] => cdp:inst8.C3
+C[4] => cdp:inst8.C4
+C[5] => cdp:inst8.C5
+C[6] => cdp:inst8.C6
+C[7] => cdp:inst8.C7
 CLOCK_MOSTRA => inst5.IN0
 
 
@@ -352,24 +359,11 @@ E[6] => gdfx_temp1.IN0
 E[7] => gdfx_temp0.IN0
 
 
-|interface|row_1:inst25
+|interface|row_1:inst7
 P1 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => inst26.IN0
-A[0] => inst17.IN0
-A[1] => inst25121021.IN0
-A[1] => inst16.IN0
-A[2] => inst24.IN0
-A[2] => inst15.IN0
-A[3] => inst23.IN0
-A[3] => inst14.IN0
-A[4] => inst22.IN0
-A[4] => inst13.IN1
-A[5] => inst21.IN0
-A[5] => inst12.IN1
-A[6] => inst20.IN0
-A[6] => inst11.IN1
-A[7] => inst19.IN0
-A[7] => inst10.IN1
+A => Decoder_3x8:inst18.A
+B => Decoder_3x8:inst18.B
+C => Decoder_3x8:inst18.C
 CLEAR => inst.ACLR
 CLEAR => inst3.ACLR
 CLEAR => inst2.ACLR
@@ -402,6 +396,106 @@ S[4] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[5] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[6] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 S[7] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|interface|row_1:inst7|Decoder_3x8:inst18
+DEC[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DEC[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+DEC[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+DEC[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DEC[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+DEC[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+DEC[6] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+DEC[7] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst9.IN0
+A => inst2.IN0
+A => inst4.IN0
+A => inst6.IN0
+A => inst8.IN0
+B => inst10.IN0
+B => inst3.IN1
+B => inst4.IN1
+B => inst7.IN1
+B => inst8.IN1
+C => inst11.IN0
+C => inst5.IN2
+C => inst6.IN2
+C => inst7.IN2
+C => inst8.IN2
+
+
+|interface|cdp:inst8
+A <= cdp_a:inst.A
+C7 => cdp_a:inst.C[7]
+C7 => cdp_b:inst2.C[7]
+C7 => cdp_c:inst5.C7
+C6 => cdp_a:inst.C[6]
+C6 => cdp_b:inst2.C[6]
+C6 => cdp_c:inst5.C6
+C5 => cdp_a:inst.C[5]
+C5 => cdp_b:inst2.C[5]
+C5 => cdp_c:inst5.C5
+C4 => cdp_a:inst.C[4]
+C4 => cdp_b:inst2.C[4]
+C4 => cdp_c:inst5.C4
+C3 => cdp_a:inst.C[3]
+C3 => cdp_b:inst2.C[3]
+C3 => cdp_c:inst5.C3
+C2 => cdp_a:inst.C[2]
+C2 => cdp_b:inst2.C[2]
+C2 => cdp_c:inst5.C2
+C1 => cdp_a:inst.C[1]
+C1 => cdp_b:inst2.C[1]
+C1 => cdp_c:inst5.C1
+B <= cdp_b:inst2.B
+C <= cdp_c:inst5.C
+
+
+|interface|cdp:inst8|cdp_a:inst
+A <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst21.IN0
+C[2] => inst5.IN0
+C[2] => inst15.IN0
+C[2] => inst18.IN0
+C[3] => inst6.IN0
+C[3] => inst15.IN1
+C[3] => inst17.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN3
+C[5] => inst7.IN0
+C[5] => inst1.IN2
+C[6] => inst10.IN0
+C[6] => inst14.IN0
+C[6] => inst1.IN1
+C[7] => inst10.IN1
+C[7] => inst12.IN0
+C[7] => inst1.IN0
+
+
+|interface|cdp:inst8|cdp_b:inst2
+B <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst10.IN0
+C[2] => inst9.IN0
+C[3] => inst5.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN0
+C[5] => inst7.IN0
+C[5] => inst1.IN1
+C[6] => inst6.IN0
+C[6] => inst1.IN2
+C[7] => inst1.IN3
+
+
+|interface|cdp:inst8|cdp_c:inst5
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C4 => inst5.IN0
+C3 => inst6.IN0
+C2 => inst7.IN0
+C1 => inst8.IN0
+C6 => inst9.IN0
+C6 => inst12.IN0
+C7 => inst9.IN1
+C5 => inst11.IN0
 
 
 |interface|mux8x3:COL1

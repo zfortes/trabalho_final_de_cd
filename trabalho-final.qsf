@@ -48,11 +48,12 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name BDF_FILE vidas.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE sim_vidas.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE Decoder_3x8.bdf
+set_global_assignment -name BDF_FILE vidas.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim_vidas.vwf
 set_global_assignment -name BDF_FILE row.bdf
 set_global_assignment -name BDF_FILE cdp_c.bdf
 set_global_assignment -name BDF_FILE cdp_b.bdf
@@ -61,10 +62,12 @@ set_global_assignment -name BDF_FILE cdp.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE sim_cdp.vwf
 set_global_assignment -name BDF_FILE km.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE sim_km.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/chair/Documents/UnB/CD/trabalho-final/sim_km.vwf"
 set_global_assignment -name BDF_FILE mux8x3.bdf
 set_global_assignment -name BDF_FILE interface.bdf
 set_global_assignment -name BDF_FILE row_1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE decorder.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/chair/Documents/UnB/CD/trabalho-final/decorder.vwf"
+set_global_assignment -name BDF_FILE pot_abc.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
