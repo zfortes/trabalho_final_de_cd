@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trabalho-final
-Mon Jul  3 18:19:49 2017
+Mon Jul  3 18:43:49 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Jul  3 18:19:48 2017          ;
+; Analysis & Synthesis Status        ; Failed - Mon Jul  3 18:43:49 2017          ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; trabalho-final                             ;
 ; Top-level Entity Name              ; interface                                  ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Jul  3 18:19:48 2017
+    Info: Processing started: Mon Jul  3 18:43:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trabalho-final -c trabalho-final
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Decoder_3x8.bdf
@@ -194,8 +194,8 @@ Warning (275080): Converted elements in bus name "C" using legacy naming rules. 
     Warning (275081): Converted element name(s) from "C[1]" to "C1"
 Info (12128): Elaborating entity "mux8x3" for hierarchy "mux8x3:COL0"
 Info (12128): Elaborating entity "row" for hierarchy "row:inst"
-Info (12128): Elaborating entity "row_1" for hierarchy "row_1:inst7"
-Info (12128): Elaborating entity "Decoder_3x8" for hierarchy "row_1:inst7|Decoder_3x8:inst18"
+Info (12128): Elaborating entity "row_1" for hierarchy "row_1:inst12"
+Info (12128): Elaborating entity "Decoder_3x8" for hierarchy "row_1:inst12|Decoder_3x8:inst18"
 Info (12128): Elaborating entity "cdp" for hierarchy "cdp:inst8"
 Warning (275085): Found inconsistent dimensions for element "C"
 Warning (275080): Converted elements in bus name "C" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -229,107 +229,11 @@ Warning (275080): Converted elements in bus name "C" using legacy naming rules. 
     Warning (275081): Converted element name(s) from "C[1]" to "C1"
 Info (12128): Elaborating entity "vidas" for hierarchy "vidas:inst26"
 Error (12014): Net "gdfx_temp0[2]", which fans out to "COL[2]", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst16|S[0]"
     Error (12015): Net is fed by "mux8x3:COL2|S"
-Error (12014): Net "row_1:inst7|gdfx_temp3", which fans out to "row_1:inst7|inst3", cannot be assigned more than one value
-    Error (12015): Net is fed by "row_1:inst7|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row_1:inst7|gdfx_temp1", which fans out to "row_1:inst7|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row_1:inst7|E[6]"
-    Error (12015): Net is fed by "row_1:inst7|inst3"
-Error (12014): Net "row_1:inst7|gdfx_temp0", which fans out to "row_1:inst7|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row_1:inst7|E[7]"
-    Error (12015): Net is fed by "row_1:inst7|inst2"
-Error (12014): Net "row_1:inst7|gdfx_temp2", which fans out to "row_1:inst7|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row_1:inst7|E[5]"
-    Error (12015): Net is fed by "row_1:inst7|inst4"
-Error (12014): Net "row:inst21|gdfx_temp3[0]", which fans out to "row:inst21|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst21|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst21|gdfx_temp0", which fans out to "row:inst21|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst21|E[7]"
-    Error (12015): Net is fed by "row:inst21|inst2"
-Error (12014): Net "row:inst21|gdfx_temp1", which fans out to "row:inst21|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst21|E[6]"
-    Error (12015): Net is fed by "row:inst21|inst3"
-Error (12014): Net "row:inst21|gdfx_temp2", which fans out to "row:inst21|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst21|E[5]"
-    Error (12015): Net is fed by "row:inst21|inst4"
-Error (12014): Net "row:inst20|gdfx_temp3[0]", which fans out to "row:inst20|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst20|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst20|gdfx_temp0", which fans out to "row:inst20|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst20|E[7]"
-    Error (12015): Net is fed by "row:inst20|inst2"
-Error (12014): Net "row:inst20|gdfx_temp1", which fans out to "row:inst20|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst20|E[6]"
-    Error (12015): Net is fed by "row:inst20|inst3"
-Error (12014): Net "row:inst20|gdfx_temp2", which fans out to "row:inst20|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst20|E[5]"
-    Error (12015): Net is fed by "row:inst20|inst4"
-Error (12014): Net "row:inst19|gdfx_temp3[0]", which fans out to "row:inst19|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst19|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst19|gdfx_temp0", which fans out to "row:inst19|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst19|E[7]"
-    Error (12015): Net is fed by "row:inst19|inst2"
-Error (12014): Net "row:inst19|gdfx_temp1", which fans out to "row:inst19|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst19|E[6]"
-    Error (12015): Net is fed by "row:inst19|inst3"
-Error (12014): Net "row:inst19|gdfx_temp2", which fans out to "row:inst19|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst19|E[5]"
-    Error (12015): Net is fed by "row:inst19|inst4"
-Error (12014): Net "row:inst18|gdfx_temp3[0]", which fans out to "row:inst18|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst18|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst18|gdfx_temp0", which fans out to "row:inst18|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst18|E[7]"
-    Error (12015): Net is fed by "row:inst18|inst2"
-Error (12014): Net "row:inst18|gdfx_temp1", which fans out to "row:inst18|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst18|E[6]"
-    Error (12015): Net is fed by "row:inst18|inst3"
-Error (12014): Net "row:inst18|gdfx_temp2", which fans out to "row:inst18|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst18|E[5]"
-    Error (12015): Net is fed by "row:inst18|inst4"
-Error (12014): Net "row:inst17|gdfx_temp3[0]", which fans out to "row:inst17|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst17|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst17|gdfx_temp0", which fans out to "row:inst17|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst17|E[7]"
-    Error (12015): Net is fed by "row:inst17|inst2"
-Error (12014): Net "row:inst17|gdfx_temp1", which fans out to "row:inst17|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst17|E[6]"
-    Error (12015): Net is fed by "row:inst17|inst3"
-Error (12014): Net "row:inst17|gdfx_temp2", which fans out to "row:inst17|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst17|E[5]"
-    Error (12015): Net is fed by "row:inst17|inst4"
-Error (12014): Net "row:inst16|gdfx_temp3[0]", which fans out to "row:inst16|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst16|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst16|gdfx_temp0", which fans out to "row:inst16|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst16|E[7]"
-    Error (12015): Net is fed by "row:inst16|inst2"
-Error (12014): Net "row:inst16|gdfx_temp1", which fans out to "row:inst16|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst16|E[6]"
-    Error (12015): Net is fed by "row:inst16|inst3"
-Error (12014): Net "row:inst16|gdfx_temp2", which fans out to "row:inst16|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst16|E[5]"
-    Error (12015): Net is fed by "row:inst16|inst4"
-Error (12014): Net "row:inst|gdfx_temp3[0]", which fans out to "row:inst|inst2", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst|inst"
-    Error (12015): Net is fed by "VCC"
-Error (12014): Net "row:inst|gdfx_temp0", which fans out to "row:inst|inst8", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst|E[7]"
-    Error (12015): Net is fed by "row:inst|inst2"
-Error (12014): Net "row:inst|gdfx_temp1", which fans out to "row:inst|inst7", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst|E[6]"
-    Error (12015): Net is fed by "row:inst|inst3"
-Error (12014): Net "row:inst|gdfx_temp2", which fans out to "row:inst|inst6", cannot be assigned more than one value
-    Error (12015): Net is fed by "row:inst|E[5]"
-    Error (12015): Net is fed by "row:inst|inst4"
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 99 errors, 37 warnings
+    Error (12015): Net is fed by "row:inst13|S[0]"
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 37 warnings
     Error: Peak virtual memory: 553 megabytes
-    Error: Processing ended: Mon Jul  3 18:19:49 2017
+    Error: Processing ended: Mon Jul  3 18:43:49 2017
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
