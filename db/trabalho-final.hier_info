@@ -1,29 +1,35 @@
 |interface
 COL[0] <= mux8x3:COL0.S
 COL[1] <= mux8x3:COL1.S
-COL[2] <= gdfx_temp0[2].DB_MAX_OUTPUT_PORT_TYPE
+COL[2] <= mux8x3:COL2.S
 COL[3] <= mux8x3:COL3.S
 COL[4] <= mux8x3:COL4.S
 COL[5] <= mux8x3:COL5.S
 COL[6] <= mux8x3:COL6.S
 COL[7] <= mux8x3:COL7.S
-RESET => row:inst.CLEAR
-RESET => row:inst13.CLEAR
-RESET => row:inst14.CLEAR
-RESET => row:inst15.CLEAR
-RESET => row:inst16.CLEAR
-RESET => row:inst19.CLEAR
-RESET => row:inst20.CLEAR
-RESET => row_1:inst12.CLEAR
-RESET => vidas:inst26.RESET
-CLOCK_MUDA_MAPA => row:inst.CLOCK
-CLOCK_MUDA_MAPA => row:inst13.CLOCK
-CLOCK_MUDA_MAPA => row:inst14.CLOCK
-CLOCK_MUDA_MAPA => row:inst15.CLOCK
-CLOCK_MUDA_MAPA => row:inst16.CLOCK
-CLOCK_MUDA_MAPA => row:inst19.CLOCK
-CLOCK_MUDA_MAPA => row:inst20.CLOCK
-CLOCK_MUDA_MAPA => row_1:inst12.CLOCK
+IN_P[1] => cdp:inst11.C1
+IN_P[2] => cdp:inst11.C2
+IN_P[3] => cdp:inst11.C3
+IN_P[4] => cdp:inst11.C4
+IN_P[5] => cdp:inst11.C5
+IN_P[6] => cdp:inst11.C6
+IN_P[7] => cdp:inst11.C7
+CLK => velocidade2:inst1.CLK
+IN[0] => cdp:inst7.C1
+IN[1] => cdp:inst7.C2
+IN[2] => cdp:inst7.C3
+IN[3] => cdp:inst7.C4
+IN[4] => cdp:inst7.C5
+IN[5] => cdp:inst7.C6
+IN[6] => cdp:inst7.C7
+C[1] => cdp:inst8.C1
+C[2] => cdp:inst8.C2
+C[3] => cdp:inst8.C3
+C[4] => cdp:inst8.C4
+C[5] => cdp:inst8.C5
+C[6] => cdp:inst8.C6
+C[7] => cdp:inst8.C7
+RESET => inst23.IN1
 E[0] => row:inst.E[0]
 E[1] => row:inst.E[1]
 E[2] => row:inst.E[2]
@@ -32,14 +38,19 @@ E[4] => row:inst.E[4]
 E[5] => row:inst.E[5]
 E[6] => row:inst.E[6]
 E[7] => row:inst.E[7]
-C[1] => cdp:inst8.C1
-C[2] => cdp:inst8.C2
-C[3] => cdp:inst8.C3
-C[4] => cdp:inst8.C4
-C[5] => cdp:inst8.C5
-C[6] => cdp:inst8.C6
-C[7] => cdp:inst8.C7
 CLOCK_MOSTRA => inst5.IN0
+LEDR[0] <= km:inst2.KM[0]
+LEDR[1] <= km:inst2.KM[1]
+LEDR[2] <= km:inst2.KM[2]
+LEDR[3] <= km:inst2.KM[3]
+LEDR[4] <= km:inst2.KM[4]
+LEDR[5] <= km:inst2.KM[5]
+LEDR[6] <= km:inst2.KM[6]
+LEDR[7] <= km:inst2.KM[7]
+LEDR[8] <= km:inst2.KM[8]
+LEDR[9] <= km:inst2.KM[9]
+LEDR[10] <= km:inst2.KM[10]
+LEDR[11] <= km:inst2.KM[11]
 
 
 |interface|mux8x3:COL0
@@ -113,43 +124,107 @@ E[6] => inst7.DATAIN
 E[7] => inst8.DATAIN
 
 
-|interface|mux8x3:COL2
-S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-E[0] => inst7.IN0
-E[1] => inst8asdasdsa.IN0
-E[2] => inst9.IN0
-E[3] => inst4.IN0
-E[4] => inst3.IN0
-E[5] => inst2.IN0
-E[6] => inst1.IN0
-E[7] => inst.IN0
-SL[0] => inst.IN1
-SL[0] => inst2.IN1
-SL[0] => inst22.IN0
-SL[0] => inst21.IN0
-SL[0] => inst18.IN0
-SL[0] => inst4.IN1
-SL[0] => inst8asdasdsa.IN1
-SL[0] => inst12.IN0
-SL[1] => inst.IN2
-SL[1] => inst19.IN0
-SL[1] => inst1.IN2
-SL[1] => inst20.IN0
-SL[1] => inst9.IN2
-SL[1] => inst4.IN2
-SL[1] => inst15.IN0
-SL[1] => inst11.IN0
-SL[2] => inst.IN3
-SL[2] => inst2.IN3
-SL[2] => inst1.IN3
-SL[2] => inst3.IN3
-SL[2] => inst17.IN0
-SL[2] => inst19asxasd.IN0
-SL[2] => inst14.IN0
-SL[2] => instasoidkasdkoasp.IN0
+|interface|Decoder_3x8:inst10
+DEC[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DEC[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+DEC[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+DEC[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DEC[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+DEC[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+DEC[6] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+DEC[7] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst9.IN0
+A => inst2.IN0
+A => inst4.IN0
+A => inst6.IN0
+A => inst8.IN0
+B => inst10.IN0
+B => inst3.IN1
+B => inst4.IN1
+B => inst7.IN1
+B => inst8.IN1
+C => inst11.IN0
+C => inst5.IN2
+C => inst6.IN2
+C => inst7.IN2
+C => inst8.IN2
 
 
-|interface|row:inst13
+|interface|cdp:inst11
+A <= cdp_a:inst.A
+C7 => cdp_a:inst.C[7]
+C7 => cdp_b:inst2.C[7]
+C7 => cdp_c:inst5.C7
+C6 => cdp_a:inst.C[6]
+C6 => cdp_b:inst2.C[6]
+C6 => cdp_c:inst5.C6
+C5 => cdp_a:inst.C[5]
+C5 => cdp_b:inst2.C[5]
+C5 => cdp_c:inst5.C5
+C4 => cdp_a:inst.C[4]
+C4 => cdp_b:inst2.C[4]
+C4 => cdp_c:inst5.C4
+C3 => cdp_a:inst.C[3]
+C3 => cdp_b:inst2.C[3]
+C3 => cdp_c:inst5.C3
+C2 => cdp_a:inst.C[2]
+C2 => cdp_b:inst2.C[2]
+C2 => cdp_c:inst5.C2
+C1 => cdp_a:inst.C[1]
+C1 => cdp_b:inst2.C[1]
+C1 => cdp_c:inst5.C1
+B <= cdp_b:inst2.B
+C <= cdp_c:inst5.C
+
+
+|interface|cdp:inst11|cdp_a:inst
+A <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst21.IN0
+C[2] => inst5.IN0
+C[2] => inst15.IN0
+C[2] => inst18.IN0
+C[3] => inst6.IN0
+C[3] => inst15.IN1
+C[3] => inst17.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN3
+C[5] => inst7.IN0
+C[5] => inst1.IN2
+C[6] => inst10.IN0
+C[6] => inst14.IN0
+C[6] => inst1.IN1
+C[7] => inst10.IN1
+C[7] => inst12.IN0
+C[7] => inst1.IN0
+
+
+|interface|cdp:inst11|cdp_b:inst2
+B <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst10.IN0
+C[2] => inst9.IN0
+C[3] => inst5.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN0
+C[5] => inst7.IN0
+C[5] => inst1.IN1
+C[6] => inst6.IN0
+C[6] => inst1.IN2
+C[7] => inst1.IN3
+
+
+|interface|cdp:inst11|cdp_c:inst5
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C4 => inst5.IN0
+C3 => inst6.IN0
+C2 => inst7.IN0
+C1 => inst8.IN0
+C6 => inst9.IN0
+C6 => inst12.IN0
+C7 => inst9.IN1
+C5 => inst11.IN0
+
+
+|interface|row:inst14
 S[0] <= instiis.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -184,7 +259,160 @@ E[6] => inst7.DATAIN
 E[7] => inst8.DATAIN
 
 
-|interface|row:inst14
+|interface|velocidade2:inst1
+clkout <= lpm_mux0:inst20.result
+CLK => inst9.CLK
+PIN0 => lpm_mux0:inst20.sel[0]
+PIN1 => lpm_mux0:inst20.sel[1]
+PIN2 => lpm_mux0:inst20.sel[2]
+
+
+|interface|velocidade2:inst1|lpm_mux0:inst20
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+data2 => LPM_MUX:LPM_MUX_component.DATA[2][0]
+data3 => LPM_MUX:LPM_MUX_component.DATA[3][0]
+data4 => LPM_MUX:LPM_MUX_component.DATA[4][0]
+data5 => LPM_MUX:LPM_MUX_component.DATA[5][0]
+data6 => LPM_MUX:LPM_MUX_component.DATA[6][0]
+data7 => LPM_MUX:LPM_MUX_component.DATA[7][0]
+sel[0] => LPM_MUX:LPM_MUX_component.SEL[0]
+sel[1] => LPM_MUX:LPM_MUX_component.SEL[1]
+sel[2] => LPM_MUX:LPM_MUX_component.SEL[2]
+result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|interface|velocidade2:inst1|lpm_mux0:inst20|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_83e:auto_generated.data[0]
+data[1][0] => mux_83e:auto_generated.data[1]
+data[2][0] => mux_83e:auto_generated.data[2]
+data[3][0] => mux_83e:auto_generated.data[3]
+data[4][0] => mux_83e:auto_generated.data[4]
+data[5][0] => mux_83e:auto_generated.data[5]
+data[6][0] => mux_83e:auto_generated.data[6]
+data[7][0] => mux_83e:auto_generated.data[7]
+sel[0] => mux_83e:auto_generated.sel[0]
+sel[1] => mux_83e:auto_generated.sel[1]
+sel[2] => mux_83e:auto_generated.sel[2]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_83e:auto_generated.result[0]
+
+
+|interface|velocidade2:inst1|lpm_mux0:inst20|LPM_MUX:LPM_MUX_component|mux_83e:auto_generated
+data[0] => _.IN0
+data[0] => _.IN0
+data[1] => _.IN0
+data[2] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN0
+data[4] => _.IN0
+data[4] => _.IN0
+data[5] => _.IN0
+data[6] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[2] => result_node[0].IN0
+sel[2] => _.IN0
+
+
+|interface|cdp:inst7
+A <= cdp_a:inst.A
+C7 => cdp_a:inst.C[7]
+C7 => cdp_b:inst2.C[7]
+C7 => cdp_c:inst5.C7
+C6 => cdp_a:inst.C[6]
+C6 => cdp_b:inst2.C[6]
+C6 => cdp_c:inst5.C6
+C5 => cdp_a:inst.C[5]
+C5 => cdp_b:inst2.C[5]
+C5 => cdp_c:inst5.C5
+C4 => cdp_a:inst.C[4]
+C4 => cdp_b:inst2.C[4]
+C4 => cdp_c:inst5.C4
+C3 => cdp_a:inst.C[3]
+C3 => cdp_b:inst2.C[3]
+C3 => cdp_c:inst5.C3
+C2 => cdp_a:inst.C[2]
+C2 => cdp_b:inst2.C[2]
+C2 => cdp_c:inst5.C2
+C1 => cdp_a:inst.C[1]
+C1 => cdp_b:inst2.C[1]
+C1 => cdp_c:inst5.C1
+B <= cdp_b:inst2.B
+C <= cdp_c:inst5.C
+
+
+|interface|cdp:inst7|cdp_a:inst
+A <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst21.IN0
+C[2] => inst5.IN0
+C[2] => inst15.IN0
+C[2] => inst18.IN0
+C[3] => inst6.IN0
+C[3] => inst15.IN1
+C[3] => inst17.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN3
+C[5] => inst7.IN0
+C[5] => inst1.IN2
+C[6] => inst10.IN0
+C[6] => inst14.IN0
+C[6] => inst1.IN1
+C[7] => inst10.IN1
+C[7] => inst12.IN0
+C[7] => inst1.IN0
+
+
+|interface|cdp:inst7|cdp_b:inst2
+B <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C[1] => inst10.IN0
+C[2] => inst9.IN0
+C[3] => inst5.IN0
+C[4] => inst8.IN0
+C[4] => inst1.IN0
+C[5] => inst7.IN0
+C[5] => inst1.IN1
+C[6] => inst6.IN0
+C[6] => inst1.IN2
+C[7] => inst1.IN3
+
+
+|interface|cdp:inst7|cdp_c:inst5
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C4 => inst5.IN0
+C3 => inst6.IN0
+C2 => inst7.IN0
+C1 => inst8.IN0
+C6 => inst9.IN0
+C6 => inst12.IN0
+C7 => inst9.IN1
+C5 => inst11.IN0
+
+
+|interface|row:inst13
 S[0] <= instiis.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -254,7 +482,7 @@ E[6] => inst7.DATAIN
 E[7] => inst8.DATAIN
 
 
-|interface|row:inst16
+|interface|row:inst19
 S[0] <= instiis.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -289,7 +517,7 @@ E[6] => inst7.DATAIN
 E[7] => inst8.DATAIN
 
 
-|interface|row:inst19
+|interface|row:inst16
 S[0] <= instiis.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -496,6 +724,42 @@ C6 => inst9.IN0
 C6 => inst12.IN0
 C7 => inst9.IN1
 C5 => inst11.IN0
+
+
+|interface|mux8x3:COL2
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+E[0] => inst7.IN0
+E[1] => inst8asdasdsa.IN0
+E[2] => inst9.IN0
+E[3] => inst4.IN0
+E[4] => inst3.IN0
+E[5] => inst2.IN0
+E[6] => inst1.IN0
+E[7] => inst.IN0
+SL[0] => inst.IN1
+SL[0] => inst2.IN1
+SL[0] => inst22.IN0
+SL[0] => inst21.IN0
+SL[0] => inst18.IN0
+SL[0] => inst4.IN1
+SL[0] => inst8asdasdsa.IN1
+SL[0] => inst12.IN0
+SL[1] => inst.IN2
+SL[1] => inst19.IN0
+SL[1] => inst1.IN2
+SL[1] => inst20.IN0
+SL[1] => inst9.IN2
+SL[1] => inst4.IN2
+SL[1] => inst15.IN0
+SL[1] => inst11.IN0
+SL[2] => inst.IN3
+SL[2] => inst2.IN3
+SL[2] => inst1.IN3
+SL[2] => inst3.IN3
+SL[2] => inst17.IN0
+SL[2] => inst19asxasd.IN0
+SL[2] => inst14.IN0
+SL[2] => instasoidkasdkoasp.IN0
 
 
 |interface|mux8x3:COL1
@@ -712,6 +976,22 @@ SL[2] => inst17.IN0
 SL[2] => inst19asxasd.IN0
 SL[2] => inst14.IN0
 SL[2] => instasoidkasdkoasp.IN0
+
+
+|interface|km:inst2
+KM[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+KM[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+KM[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+KM[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+KM[4] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+KM[5] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+KM[6] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+KM[7] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+KM[8] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+KM[9] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+KM[10] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+KM[11] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+AUMENTA => inst5.IN0
 
 
 |interface|vidas:inst26

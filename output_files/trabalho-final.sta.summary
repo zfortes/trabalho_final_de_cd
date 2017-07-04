@@ -2,4 +2,684 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Setup 'velocidade2:inst1|inst7'
+Slack : -3.238
+TNS   : -166.418
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst5'
+Slack : -3.200
+TNS   : -164.290
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst3'
+Slack : -3.148
+TNS   : -161.378
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst9'
+Slack : -2.916
+TNS   : -148.386
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst'
+Slack : -2.804
+TNS   : -142.114
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst4'
+Slack : -2.783
+TNS   : -140.938
+
+Type  : Slow Model Setup 'velocidade2:inst1|inst8'
+Slack : -2.675
+TNS   : -134.890
+
+Type  : Slow Model Setup 'IN[0]'
+Slack : -1.479
+TNS   : -67.914
+
+Type  : Slow Model Setup 'inst3'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst22'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst'
+Slack : 0.957
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst14'
+Slack : 0.957
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst18'
+Slack : 0.957
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst10'
+Slack : 0.958
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst6'
+Slack : 0.958
+TNS   : 0.000
+
+Type  : Slow Model Setup 'inst22'
+Slack : 0.967
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst11'
+Slack : 1.096
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst15'
+Slack : 1.098
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst19'
+Slack : 1.098
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst3'
+Slack : 1.098
+TNS   : 0.000
+
+Type  : Slow Model Setup 'km:inst2|inst7'
+Slack : 1.098
+TNS   : 0.000
+
+Type  : Slow Model Setup 'CLK'
+Slack : 2.454
+TNS   : 0.000
+
+Type  : Slow Model Setup 'CLOCK_MOSTRA'
+Slack : 2.462
+TNS   : 0.000
+
+Type  : Slow Model Hold 'IN[0]'
+Slack : -5.904
+TNS   : -80.398
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst8'
+Slack : -3.931
+TNS   : -5.256
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst4'
+Slack : -3.823
+TNS   : -4.692
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst'
+Slack : -3.802
+TNS   : -4.670
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst9'
+Slack : -3.690
+TNS   : -4.374
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst3'
+Slack : -3.458
+TNS   : -4.145
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst5'
+Slack : -3.406
+TNS   : -3.406
+
+Type  : Slow Model Hold 'velocidade2:inst1|inst7'
+Slack : -3.368
+TNS   : -4.236
+
+Type  : Slow Model Hold 'CLOCK_MOSTRA'
+Slack : -2.192
+TNS   : -2.192
+
+Type  : Slow Model Hold 'CLK'
+Slack : -2.184
+TNS   : -2.184
+
+Type  : Slow Model Hold 'km:inst2|inst15'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Slow Model Hold 'km:inst2|inst19'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Slow Model Hold 'km:inst2|inst3'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Slow Model Hold 'km:inst2|inst7'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Slow Model Hold 'km:inst2|inst11'
+Slack : -0.826
+TNS   : -0.826
+
+Type  : Slow Model Hold 'inst22'
+Slack : -0.697
+TNS   : -0.697
+
+Type  : Slow Model Hold 'km:inst2|inst10'
+Slack : -0.688
+TNS   : -0.688
+
+Type  : Slow Model Hold 'km:inst2|inst6'
+Slack : -0.688
+TNS   : -0.688
+
+Type  : Slow Model Hold 'km:inst2|inst'
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Slow Model Hold 'km:inst2|inst14'
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Slow Model Hold 'km:inst2|inst18'
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Slow Model Hold 'inst3'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'km:inst2|inst22'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst7'
+Slack : -5.349
+TNS   : -328.392
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst5'
+Slack : -5.311
+TNS   : -325.960
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst3'
+Slack : -5.259
+TNS   : -322.632
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst9'
+Slack : -5.027
+TNS   : -307.784
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst'
+Slack : -4.915
+TNS   : -300.616
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst4'
+Slack : -4.894
+TNS   : -299.272
+
+Type  : Slow Model Recovery 'velocidade2:inst1|inst8'
+Slack : -4.786
+TNS   : -292.360
+
+Type  : Slow Model Recovery 'IN[0]'
+Slack : -3.590
+TNS   : -215.816
+
+Type  : Slow Model Removal 'IN[0]'
+Slack : -0.327
+TNS   : -9.321
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst8'
+Slack : 1.146
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst4'
+Slack : 1.254
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst'
+Slack : 1.275
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst9'
+Slack : 1.387
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst3'
+Slack : 1.619
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst5'
+Slack : 1.671
+TNS   : 0.000
+
+Type  : Slow Model Removal 'velocidade2:inst1|inst7'
+Slack : 1.709
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'IN[0]'
+Slack : -1.777
+TNS   : -337.904
+
+Type  : Slow Model Minimum Pulse Width 'CLK'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_MOSTRA'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst3'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst4'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst5'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst7'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst8'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'velocidade2:inst1|inst9'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Slow Model Minimum Pulse Width 'inst22'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'inst3'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst10'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst11'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst14'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst15'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst18'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst19'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst22'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst3'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst6'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'km:inst2|inst7'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst7'
+Slack : -1.322
+TNS   : -68.233
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst5'
+Slack : -1.302
+TNS   : -67.113
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst3'
+Slack : -1.278
+TNS   : -65.769
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst9'
+Slack : -1.169
+TNS   : -59.665
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst'
+Slack : -1.134
+TNS   : -57.705
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst4'
+Slack : -1.116
+TNS   : -56.697
+
+Type  : Fast Model Setup 'velocidade2:inst1|inst8'
+Slack : -1.082
+TNS   : -54.793
+
+Type  : Fast Model Setup 'IN[0]'
+Slack : -0.121
+TNS   : -1.994
+
+Type  : Fast Model Setup 'inst3'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst22'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst14'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst18'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst10'
+Slack : 0.776
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst6'
+Slack : 0.776
+TNS   : 0.000
+
+Type  : Fast Model Setup 'inst22'
+Slack : 0.782
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst11'
+Slack : 0.845
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst15'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst19'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst3'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Fast Model Setup 'km:inst2|inst7'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLK'
+Slack : 1.568
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_MOSTRA'
+Slack : 1.572
+TNS   : 0.000
+
+Type  : Fast Model Hold 'IN[0]'
+Slack : -3.081
+TNS   : -26.464
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst8'
+Slack : -2.063
+TNS   : -2.543
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst4'
+Slack : -2.029
+TNS   : -2.516
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst'
+Slack : -2.011
+TNS   : -2.486
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst9'
+Slack : -1.976
+TNS   : -2.370
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst3'
+Slack : -1.867
+TNS   : -2.262
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst5'
+Slack : -1.843
+TNS   : -1.843
+
+Type  : Fast Model Hold 'velocidade2:inst1|inst7'
+Slack : -1.823
+TNS   : -2.297
+
+Type  : Fast Model Hold 'CLOCK_MOSTRA'
+Slack : -1.192
+TNS   : -1.192
+
+Type  : Fast Model Hold 'CLK'
+Slack : -1.188
+TNS   : -1.188
+
+Type  : Fast Model Hold 'km:inst2|inst15'
+Slack : -0.466
+TNS   : -0.466
+
+Type  : Fast Model Hold 'km:inst2|inst19'
+Slack : -0.466
+TNS   : -0.466
+
+Type  : Fast Model Hold 'km:inst2|inst3'
+Slack : -0.466
+TNS   : -0.466
+
+Type  : Fast Model Hold 'km:inst2|inst7'
+Slack : -0.466
+TNS   : -0.466
+
+Type  : Fast Model Hold 'km:inst2|inst11'
+Slack : -0.465
+TNS   : -0.465
+
+Type  : Fast Model Hold 'inst22'
+Slack : -0.402
+TNS   : -0.402
+
+Type  : Fast Model Hold 'km:inst2|inst10'
+Slack : -0.396
+TNS   : -0.396
+
+Type  : Fast Model Hold 'km:inst2|inst6'
+Slack : -0.396
+TNS   : -0.396
+
+Type  : Fast Model Hold 'km:inst2|inst'
+Slack : -0.395
+TNS   : -0.395
+
+Type  : Fast Model Hold 'km:inst2|inst14'
+Slack : -0.395
+TNS   : -0.395
+
+Type  : Fast Model Hold 'km:inst2|inst18'
+Slack : -0.395
+TNS   : -0.395
+
+Type  : Fast Model Hold 'inst3'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'km:inst2|inst22'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst7'
+Slack : -2.369
+TNS   : -145.255
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst5'
+Slack : -2.349
+TNS   : -143.975
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst3'
+Slack : -2.325
+TNS   : -142.439
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst9'
+Slack : -2.216
+TNS   : -135.463
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst'
+Slack : -2.181
+TNS   : -133.223
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst4'
+Slack : -2.163
+TNS   : -132.071
+
+Type  : Fast Model Recovery 'velocidade2:inst1|inst8'
+Slack : -2.129
+TNS   : -129.895
+
+Type  : Fast Model Recovery 'IN[0]'
+Slack : -1.168
+TNS   : -68.391
+
+Type  : Fast Model Removal 'IN[0]'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst8'
+Slack : 0.654
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst4'
+Slack : 0.688
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst'
+Slack : 0.706
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst9'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst3'
+Slack : 0.850
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst5'
+Slack : 0.874
+TNS   : 0.000
+
+Type  : Fast Model Removal 'velocidade2:inst1|inst7'
+Slack : 0.894
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'IN[0]'
+Slack : -1.222
+TNS   : -146.384
+
+Type  : Fast Model Minimum Pulse Width 'CLK'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_MOSTRA'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst3'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst4'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst5'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst7'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst8'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'velocidade2:inst1|inst9'
+Slack : -0.500
+TNS   : -66.000
+
+Type  : Fast Model Minimum Pulse Width 'inst22'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'inst3'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst10'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst11'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst14'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst15'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst18'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst19'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst22'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst3'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst6'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'km:inst2|inst7'
+Slack : -0.500
+TNS   : -1.000
+
 ------------------------------------------------------------
