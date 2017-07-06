@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jul 06 00:31:39 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Thu Jul  6 15:07:45 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : trabalho-final
-Top-level Entity Name : mapa_completo
+Top-level Entity Name : linhas
 Family : Cyclone II
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 8
+    Total combinational functions : 8
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 18
+Total pins : 11
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
