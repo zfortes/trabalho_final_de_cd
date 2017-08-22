@@ -1,5 +1,3 @@
-Trabalho de CD
+# RACING GAME
 
-
--Adicionado circuito de mudança de velocidade
--Adicionado comparador do carro e a pista
+Trabalho final de Circuitos Digitais 1/2017 - UnB
